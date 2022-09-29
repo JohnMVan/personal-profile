@@ -15,7 +15,7 @@
         <meta name="author" content="John Vanhessche"/>
 
         <!--Link section-->
-        <link rel="stylesheet" href="../public/styles/site.css">
+        <link rel="stylesheet" href="./public/styles/site.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -23,58 +23,48 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--script section-->
-        <script src="../public/js/header.js"></script>
-        <script src="../public/js/footer.js"></script>
+        <script src="./public/js/header.js"></script>
+        <script src="./public/js/footer.js"></script>
 
         <!--page title-->
         <title>About Me</title>
     </head>
 
-    <body class="body-about">
+    <body class="body-bucket">
 
         <div class="header-area">
             <header-component></header-component>
-        </div>
-        
+        </div>       
 
-            <div class="about-content-area">  <!--content area start-->
+            <div class="bucket-content-area">  <!--content area start-->
                 <div class="column">
-                    <h2>About Me</h2>
-                    
-                    <a src="../public/images/headshot of john.jpg"></a>
-                    <p>
-                        I'm a current student at Bellevue University, studying to become a Web Developer.  I have some programming
-                        experience with C#, MySQL, and Python.  I grew up in Nebraska, but have bounced around to a few places in 
-                        the midwest.
-                    </p>
+                    <h2>My Bucket List</h2>
                     <br>
-                    <p>
-                        Some of my hobbies include:
                         <ul>
-                            <li>Gaming</li>
-                            <li>Bicycle Riding</li>
-                            <li>Guitar</li>
-                            <li>Building computers</li>
-                            <li>World History</li>
+                            <li>Mideival castle tour</li>
+                            <li>Visit Australia/New Zealand</li>
+                            <li>Drive a Nascar racer</li>
+                            <li>Sailing in the ocean</li>
+                            <li>Learn to fly a plane</li>
                         </ul>
-                    </p>
                 </div> <!--end column div-->
             </div>   <!--end content area-->
     
         <div class="footer-area">
             <footer-component></footer-component>
-        </div>
+        </div>   
 
         <script type="module">
 
-            import { Button } from "../public/js/button.js";
+             import { Button } from "./public/js/button.js";
 
-            window.onload = function() {                
-                let button = new Button;
-                let page = "about-button";
-                let newButton = button.changeButton(page); 
-                document.getElementById("about-button").innerHTML = newButton;                
-            };
+                window.onload = function() {                
+                    let button = new Button;
+                    let page = "bucket-button";
+                    let newButton = button.changeButton(page); 
+                    document.getElementById("bucket-button").innerHTML = newButton;   
+                    console.log(newButton)             
+                };
 
         </script>
     </body>

@@ -15,7 +15,7 @@
         <meta name="author" content="John Vanhessche"/>
 
         <!--Link section-->
-        <link rel="stylesheet" href="../public/styles/site.css">
+        <link rel="stylesheet" href="./public/styles/site.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -23,50 +23,50 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!--script section-->
-        <script src="../public/js/header.js"></script>
-        <script src="../public/js/footer.js"></script>
+        <script src="./public/js/header.js"></script>
+        <script src="./public/js/footer.js"></script>
 
         <!--page title-->
-        <title>About Me</title>
+        <title>Resume</title>
     </head>
 
-    <body class="body-bucket">
+    <body class="body-resume">
 
         <div class="header-area">
             <header-component></header-component>
-        </div>       
+        </div>        
 
-            <div class="bucket-content-area">  <!--content area start-->
+            <div class="col-2 resume-content-area"> 
                 <div class="column">
-                    <h2>My Bucket List</h2>
-                    <br>
-                        <ul>
-                            <li>Mideival castle tour</li>
-                            <li>Visit Australia/New Zealand</li>
-                            <li>Drive a Nascar racer</li>
-                            <li>Sailing in the ocean</li>
-                            <li>Learn to fly a plane</li>
+                    <h2>Summary</h2>                            
+                            <li>Experienced Manager</li>
+                            <li>Excellent communication</li>
+                            <li>Accomplished public speaker</li>
+                            <li>Computer hacker skills</li>
                         </ul>
+                    </p>
                 </div> <!--end column div-->
+               
+                <div class="column">
+                    <h2>Resume</h2>
+                            <li>Company A</li>
+                            <li>Company B</li>
+                            <li>Company C</li>
+                        </ul>
+                    </p>
+                </div> <!--end column div-->
+                <div>
+                    <h2>Education</h2>
+                        <li>Computer Science</li>
+                        <li></li>
+                        <li></li>
+                </div>
             </div>   <!--end content area-->
     
         <div class="footer-area">
             <footer-component></footer-component>
         </div>   
 
-        <script type="module">
-
-             import { Button } from "../public/js/button.js";
-
-                window.onload = function() {                
-                    let button = new Button;
-                    let page = "bucket-button";
-                    let newButton = button.changeButton(page); 
-                    document.getElementById("bucket-button").innerHTML = newButton;   
-                    console.log(newButton)             
-                };
-
-        </script>
     </body>
 </html>
     
