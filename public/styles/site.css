@@ -1,0 +1,206 @@
+html, body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    height: 100%;
+}
+
+/* Styling for main content page */
+
+.main_container {
+    height: 100%;
+    width: 100vw;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr 1fr 40px;
+    /* gap: 10px;    */
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.main_containter div{
+    padding: 10px;
+    border: 1px solid rgb(17, 2, 2);     
+}
+
+
+.main_banner {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-image: url(../images/space\ 2kai-pilger-Ef6iL87-vOA-unsplash.jpg);
+} 
+
+.main_banner_text {
+    color: blue;
+    text-shadow: 1px 1px rgb(248, 244, 244);
+}
+
+/*
+.main_footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: coral;
+} */
+
+.main_sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url(../images/space\ 2kai-pilger-Ef6iL87-vOA-unsplash.jpg);
+    color: rgb(243, 243, 240);
+}
+
+.main_content_area {
+    background-color: darkcyan;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url(../images/old-style-tv-screen.jpg);
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+}
+
+.main_content_video {
+    display: flex;
+    justify-content: center;
+}
+
+.main_sidebar_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main_sidebar_ul, .main_sidebar_a {    
+    list-style-type: none; 
+}
+
+li.main_sidebar_li:hover {
+    color:rgb(99, 99, 226);
+    cursor: pointer;
+}
+
+a.main_sidebar_a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_sidebar_li {
+    background: url(../images/pacman.jpg) no-repeat;
+    background-size: 15px;
+    font-size: 15px;
+    height: 15px;
+    padding-left: 20px;    
+    padding-right: 10px;
+}
+
+/*header and footer styling*/
+.footer-area {
+    position: fixed; bottom: 0; left: 10%; right: 10%; height: 90px;
+    text-align: center;    
+}
+
+.header-area {
+    position: fixed; top: 0; left: 10%; right: 10%; 
+    text-align: center;
+}
+
+.quick-links :hover {
+    color:antiquewhite
+}
+
+.footer-items:link {
+    text-shadow: 4px;
+}
+
+
+/*index page styling*/
+.current_sel {
+    color: rgb(248, 69, 4);
+}
+
+.current_sel:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    margin-top: 150px;
+    font-size: medium;
+}
+
+.content_footer {    
+    text-align: center;
+}
+
+
+/* about page styling*/
+
+.body-about, 
+.body-projects,
+.body-database,
+.body-apitesting,
+.body-bucket, 
+.body-resume {
+    background-image: url(../images/old-style-tv-screen.jpg);
+    background-size: 100% 100%;
+}
+
+.about-content-area, 
+.bucket-content-area, 
+.resume-content-area {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 175px;
+    letter-spacing: 2px;    
+}
+
+/*project page styling*/
+
+.col-3 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: auto;
+   margin-left: 250px;
+   margin-top: 175px;
+   margin-right: 250px;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: 250px;
+    margin-top: 175px;
+    margin-right: 250px;
+    padding: 20px;
+}
+
+.resume-colum {
+    flex: 50%;
+    padding: 20px;
+}
+
+.project-column, .database-column, .api-column {
+    flex: 33.33%;
+}   
+
+a.project-links {
+    text-decoration: none;
+}
+
+a.project-links:hover {
+    color: red;
+}
+
