@@ -16,9 +16,17 @@ export class Button {
             buttonString += `href="./about.html">About`
         } else if(page==="bucket-button") {
             buttonString += `href="./bucket-list.html">Bucket List`
+        } else if(page==="testing-button") {
+            buttonString += `href="./api-test.html">API Unit Testing`
+        } else if(page==="diagrams-button") {
+            buttonString += `href="./database.html">Database Diagrams`
+        } else if(page==="resume-button") {
+            buttonString += `href="./resume.html">Resume`
+        } else if(page==="projects-button") {
+            buttonString += `href="projects.html">Projects`
         }
         
-
+        
 
         return buttonString + `</a></button>`;
         

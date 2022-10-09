@@ -85,5 +85,18 @@
         <footer-component></footer-component>
     </div>
 
+    <script type="module">
+
+        import { Button } from "./public/js/button.js";
+
+        window.onload = function() {                
+            let button = new Button;
+            let page = "projects-button";
+            let newButton = button.changeButton(page); 
+            document.getElementById("projects-button").innerHTML = newButton;                
+        };
+
+    </script>
+
 </body>
 </html>

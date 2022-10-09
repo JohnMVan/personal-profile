@@ -38,35 +38,36 @@
 
             <div class="col-2 resume-content-area"> 
                 <div class="column">
-                    <h2>Summary</h2>                            
-                            <li>Experienced Manager</li>
-                            <li>Excellent communication</li>
-                            <li>Accomplished public speaker</li>
-                            <li>Computer hacker skills</li>
+                    <h2>Quick Overview</h2>
+                        <ul>                            
+                            <li>Computer Science graduate</li><br>
+                            <li>Experienced using: C#, Java, HTML, CSS, JavaScript, SQL Server, MongoDB, MySQL, Ajax, Linux, AIX, VS Code, Visual Studio, Team Foundation, Eclipse
+                                Brackets, Atom, Notepad++, GitHub, Agile, and Microsoft Office </li><br>
+                            <li>10+ years managing technical projects from inception to completion</li><br>
+                            <li>Proven track record of success</li>
                         </ul>
-                    </p>
+                        <br><br>
+                        <p>Click <a href="./public/images/Vanhessche Resume.pdf">here</a> to see my complete resume.</p>
                 </div> <!--end column div-->
-               
-                <div class="column">
-                    <h2>Resume</h2>
-                            <li>Company A</li>
-                            <li>Company B</li>
-                            <li>Company C</li>
-                        </ul>
-                    </p>
-                </div> <!--end column div-->
-                <div>
-                    <h2>Education</h2>
-                        <li>Computer Science</li>
-                        <li></li>
-                        <li></li>
-                </div>
             </div>   <!--end content area-->
+        </div>
     
         <div class="footer-area">
             <footer-component></footer-component>
-        </div>   
+        </div> 
+        
+        <script type="module">
 
+            import { Button } from "./public/js/button.js";
+    
+            window.onload = function() {                
+                let button = new Button;
+                let page = "resume-button";
+                let newButton = button.changeButton(page); 
+                document.getElementById("resume-button").innerHTML = newButton;                
+            };
+    
+        </script>
     </body>
 </html>
     
