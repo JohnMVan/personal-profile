@@ -13,17 +13,17 @@ export class Button {
             style="background-color: aqua; color: black;"`
         
         if(page==="about-button") {
-            buttonString += `href="/personal-portfolio/about.html">About`
+            buttonString += `href="./about.html">About`
         } else if(page==="bucket-button") {
-            buttonString += `href="/personal-portfolio/bucket-list.html">Bucket List`
+            buttonString += `href="./bucket-list.html">Bucket List`
         } else if(page==="testing-button") {
-            buttonString += `href="/personal-portfolio/api-test.html">API Unit Testing`
+            buttonString += `href="./api-test.html">API Unit Testing`
         } else if(page==="diagrams-button") {
-            buttonString += `href="/personal-portfolio/database.html">Database Diagrams`
+            buttonString += `href="./database.html">Database Diagrams`
         } else if(page==="resume-button") {
-            buttonString += `href="/personal-portfolio/resume.html">Resume`
+            buttonString += `href="./resume.html">Resume`
         } else if(page==="projects-button") {
-            buttonString += `href="/personal-portfolio/projects.html">Projects`
+            buttonString += `href="./projects.html">Projects`
         } else if(page==="presentation-button") {
             buttonString += `href="././web-430/vanhessche-tech-value-stream.html">Presentations`
         }
