@@ -150,14 +150,16 @@ a.main_sidebar_a {
 .body-database,
 .body-apitesting,
 .body-bucket, 
-.body-resume {
+.body-resume,
+.body-presentation {
     background-image: url(../images/old-style-tv-screen.jpg);
     background-size: 100% 100%;
 }
 
 .about-content-area, 
 .bucket-content-area, 
-.resume-content-area {
+.resume-content-area,
+.presentation-content-area {
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 175px;
