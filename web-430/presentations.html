@@ -1,0 +1,79 @@
+<!--
+    title:  vanhessche-tech-value-stream.html
+    Author:  John Vanhessche
+    Date:  7 January 2023
+    Desc:  vanhessche-tech-value-stream.html for personal profile.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta section-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="John, Vanhessche, Profile, Site, web, software developer extraordinaire, the best guy, awesome"/>
+        <meta name="author" content="John Vanhessche"/>
+
+        <!--Link section-->
+        <link rel="stylesheet" href=".././public/styles/site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--script section-->
+        <script src="../public/js/headerp.js"></script>
+        <script src="../public/js/footer.js"></script>
+
+        <!--page title-->
+        <title>Presentations</title>
+    </head>
+
+    <body class="body-presentation">
+
+        <div class="header-area">
+            <header-componentp></header-componentp>
+        </div>       
+
+            <div class="presentation-content-area">  <!--content area start-->
+                <div class="column">
+                    <h2>Presentations</h2>
+                    <p>Click [] for full size</p>
+                    <br>
+                </div> <!--end column div-->
+            </div>   <!--end content area-->
+            <div class="card">
+                <div class="card-body">
+                    <video controls autoplay reload="'none" style="border-radius: 20px; width:250px; margin-left: 225px;">
+                        <source src="../devops-presentations/The Technology Value Stream Presentation.mp4" type="video/mp4"/>
+                    </video>
+                    <video controls autoplay reload="'none" style="border-radius: 20px; width:250px; margin-left: 30px;">
+                        <source src="../devops-presentations/Two Pizza Rule Presentation.mp4" type="video/mp4"/>
+                    </video>
+                    <video controls autoplay reload="'none" style="border-radius: 20px; width:250px; margin-left: 30px;">
+                        <source src="../devops-presentations/DevOps Automated Testing.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>    
+        <div class="footer-area">
+            <footer-component></footer-component>
+        </div>   
+
+        <script type="module">
+
+             import { Button } from "../public/js/button.js";
+
+                window.onload = function() {                
+                    let button = new Button;
+                    let page = "presentation-button";
+                    let newButton = button.changeButton(page); 
+                    document.getElementById("presentation-button").innerHTML = newButton;   
+                    console.log(newButton)             
+                };
+
+        </script>
+    </body>
+</html>
+    
+
